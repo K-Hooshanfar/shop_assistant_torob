@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: shopping-assistant:latest
+    container_name: shopping-assistant
+
+    env_file:
+      - ./.env
+
+    environment:
+      - DATA_FILE_PATH=${DATA_FILE_PATH:-/app/data/base_products.parquet}
+      - MEMBERS_FILE_PATH=${MEMBERS_FILE_PATH:-/app/data/members.parquet}
+
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-https://turbo.torob.com/v1}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o-mini}
+
+      - PYTHONUNBUFFERED=1
+
+    volumes:
+      - ./app/data:/app/data
+
+    ports:
+      - "8080:8080"
+
+    restart: unless-stopped

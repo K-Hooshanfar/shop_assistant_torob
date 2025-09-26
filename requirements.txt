@@ -1,0 +1,15 @@
+fastapi==0.114.2
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.4.0
+pandas==2.2.2
+numpy==1.26.4
+rapidfuzz==3.9.7
+openai
+pyarrow==16.1.0
+polars
+rapidfuzz
+hazm
+Pillow>=10.3.0
+requests
+aiofiles

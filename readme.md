@@ -39,14 +39,14 @@ and product intelligence features like product extraction, image classification,
 ```bash
 .
 ├── app/
-│   ├── main.py               # FastAPI app, endpoints, core logic
-│   ├── services.py           # NLP/LLM logic, fuzzy matching, product comparison
-│   ├── schemas.py            # Pydantic request/response models
-│   ├── dependencies.py       # Cached DataFrame loaders
-│   ├── config.py             # Settings loader (from .env)
-├── requirements.txt          # Python dependencies
-├── Dockerfile                # Docker container setup
-├── docker-compose.yml        # Optional: Compose setup (volumes, services)
+│   ├── main.py                
+│   ├── services.py            
+│   ├── schemas.py            
+│   ├── dependencies.py        
+│   ├── config.py             
+├── requirements.txt          
+├── Dockerfile                
+├── docker-compose.yml        
 ```
 
 ---
@@ -191,5 +191,6 @@ docker-compose up
 
 * [ ] Add type hints and docstrings throughout the codebase.
 * [ ] Improve error handling and validation.
+
 
 

@@ -1,4 +1,4 @@
-# 🛍️ Shopping Assistant API
+# 🛍️ Shopping Assistant Torob
 
 A powerful, multilingual shopping assistant API built with **FastAPI**, supporting Persian product queries, natural language understanding, 
 and product intelligence features like product extraction, image classification, and price comparison.
@@ -191,4 +191,5 @@ docker-compose up
 
 * [ ] Add type hints and docstrings throughout the codebase.
 * [ ] Improve error handling and validation.
+
 

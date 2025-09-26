@@ -56,8 +56,8 @@ and product intelligence features like product extraction, image classification,
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-org/shopping-assistant-torob.git
-cd shopping-assistant-torob
+git clone https://github.com/your-org/shop_assistant_torob.git
+cd shop_assistant_torob
 ```
 
 ### 2. Environment Setup
@@ -191,6 +191,7 @@ docker-compose up
 
 * [ ] Add type hints and docstrings throughout the codebase.
 * [ ] Improve error handling and validation.
+
 
 
 
